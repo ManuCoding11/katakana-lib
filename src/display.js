@@ -25,7 +25,7 @@ function displaySignRaw (sign) {
         input.readOnly = true
         input.isSet = true
 
-        if (input.value == sign.resolved) {
+        if (input.value.toLowerCase() == sign.resolved) {
             input.style.color = '#00b000'
             input.style.backgroundColor = '#d0d0d0'
         }
