@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Katakana practice</title>
+</head>
+
+<body>
+    <div class="bar">
+        <fieldset id="field_chars">
+            <input type="checkbox" id="input_chars_vowels" value="">
+            <label for="input_chars_vowels">vowels</label>
+
+            <input type="checkbox" id="input_chars_b" value="b">
+            <label for="input_chars_b">b</label>
+
+            <input type="checkbox" id="input_chars_d" value="d">
+            <label for="input_chars_d">d</label>
+
+            <input type="checkbox" id="input_chars_g" value="g">
+            <label for="input_chars_g">g</label>
+
+            <input type="checkbox" id="input_chars_h" value="h">
+            <label for="input_chars_h">h</label>
+
+            <input type="checkbox" id="input_chars_k" value="k">
+            <label for="input_chars_k">k</label>
+
+            <input type="checkbox" id="input_chars_m" value="m">
+            <label for="input_chars_m">m</label>
+
+            <input type="checkbox" id="input_chars_n" value="n">
+            <label for="input_chars_n">n</label>
+
+            <input type="checkbox" id="input_chars_p" value="p">
+            <label for="input_chars_p">p</label>
+
+            <input type="checkbox" id="input_chars_r" value="r">
+            <label for="input_chars_r">r</label>
+
+            <input type="checkbox" id="input_chars_s" value="s">
+            <label for="input_chars_s">s</label>
+
+            <input type="checkbox" id="input_chars_t" value="t">
+            <label for="input_chars_t">t</label>
+
+            <input type="checkbox" id="input_chars_w" value="w">
+            <label for="input_chars_w">w</label>
+
+            <input type="checkbox" id="input_chars_y" value="y">
+            <label for="input_chars_y">y</label>
+
+            <input type="checkbox" id="input_chars_z" value="z">
+            <label for="input_chars_z">z</label>
+        </fieldset>
+        <!--<fieldset id="field_chars_special">
+            <input type="checkbox" id="input_chars_special" checked>
+            <label for="input_chars_special">Special characters</label>
+        </fieldset>-->
+    </div>
+
+    <div class="bar">
+        <fieldset id="field_input_control">
+            <input type="number" id="input_amount" value="1"  oninput="if (value < 1 && !value == '') value = 1">
+        </fieldset>
+    </div>
+
+    <div class="bar">
+        <button class="button" onclick="clearOut(); displaySign()">Generate</button>
+    </div>
+
+    <div class="out" id="outBase"></div>
+
+
+    <script src="lib/util.js"></script>
+    <script src="data/notation.js"></script>
+    <script src="src/pattern.js"></script>
+    <script src="src/display.js"></script>
+</body>
+
+</html>
